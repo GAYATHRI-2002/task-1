@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body bgcolor="black">
+    <h1>my page</h1>
+
+    <a href="https://www.google.com"><button style="height: 50px;width: 150px;font-size: larger;border: 0;background-color: #ff00ff;border-radius: 5px;">Click here</button></a>
+
+    <br><br>
+    <button onclick="dosomething()" style="height: 90px;width: 190px;background-color: grey;color: #ff00ff;font-size: larger;border: 0;border-radius: 10px;">Click here</button>
+
+    <p id="test" style="color: antiquewhite;">hello</p>
+
+    <br><br>
+    <form>
+        <div>
+            <label for="fname">first name</label>
+            <input type="text" id="fname" name="fname" placeholder="enter first name" required>
+        </div> 
+        <br>
+        <div>
+            <label for="lname">last name</label>
+            <input type="text" id="lname" name="lname" placeholder="enter last name">
+        </div>
+        <br>
+        <div>
+            <label for="password">password</label>
+            <input type="password" id="password" name="password" placeholder="enter the password">
+        </div>
+
+        <br>
+        <div>
+            <label for="email">email:</label>
+            <input type="email" id="email" name="email" placeholder="enter the email">
+        </div>
+        <br>
+
+        <div>
+            <label for="Title">Title</label>
+
+            <label for="mr">mr</label>
+            <input type="radio" id="mr" name="title" value="mr">
+
+            <label for="ms">ms</label>
+            <input type="radio" id="ms" name="title" value="ms">
+
+            <label for="phd">phd</label>
+            <input type="radio" id="phd" name="title" value="phd">
+            
+        </div>
+
+        <div>
+            <button type="reset">reset</button>
+        </div>
+        <br><br>
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+
+    </form>
+    <style>
+        label{
+            color: antiquewhite;
+        }
+    </style>
+    <script>
+        function dosomething(){
+            document.getElementById('test').innerHTML = "Good bye";
+        }
+    </script>
+</body>
+</html>
